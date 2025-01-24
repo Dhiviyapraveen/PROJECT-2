@@ -1,0 +1,419 @@
+Body{
+  width: 100% !important;
+}
+
+.mr-2{
+  margin-right:15px;
+}
+.mr-2:hover{
+  background-color:  #9b59ac;;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 20px 0;
+  background-color: #f8f9fa; /* Light grey color */
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.podcast-title h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.search-bar-col {
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 25px;
+  border: 1px solid #ced4da;
+  box-sizing: border-box;
+}
+.d-flex-justify-content-end-align-items-center{
+  padding: 10px;
+  
+}
+
+.login-signup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.login-signup .btn {
+  border-radius: 25px;
+  font-size: 14px;
+}
+/* Podcast List - Grid Layout */
+.podcast-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Dynamic columns */
+  gap: 20px; /* Space between cards */
+  margin-top: 20px;
+}
+
+/* Podcast Card Styling */
+.podcast-card {
+  background-color: #f9f9f9; /* Light grey background */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.podcast-card:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.podcast-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.podcast-card audio {
+  width: 100%; /* Ensure the audio player fits the card */
+  margin-bottom: 10px;
+}
+
+.podcast-card .add-to-playlist {
+  background-color: #5a5050;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.podcast-card .add-to-playlist:hover {
+  background-color: #9b59ac; /* Darker blue on hover */
+}
+
+
+
+/* Playlist Section near Signup */
+.playlist-section {
+  display: grid;
+  grid-template-columns: repeat(4, 200px); /* Fixed size of 200px per item, 4 items per row */
+  gap: 20px; /* Space between items */
+  margin-top: 15px;
+  justify-content: start; /* Align items to the start (left) */
+}
+
+.playlist-item {
+  background-color: white;
+  border: 1px solid #ced4da;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  width: 200px; /* Fixed width for all items */
+  height: 250px; /* Fixed height for all items */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.playlist-item:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+.playlist-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+
+/* Center Align Sections */
+.center-align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 20px 0;
+}
+
+/* Buttons Styling */
+.category-buttons,
+.interest-buttons,
+.language-buttons,
+.skill-buttons,
+.stay-healthy-buttons,
+.learn-about-buttons,
+.browse-category-buttons,
+.keep-in-touch-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.category-buttons button,
+.interest-buttons button,
+.language-buttons button,
+.skill-buttons button,
+.stay-healthy-buttons button,
+.learn-about-buttons button,
+.browse-category-buttons button,
+.keep-in-touch-buttons button {
+  background-color: white;
+  color: black;
+  border: 1px solid #ced4da;
+  border-radius: 25px;  /* Curved edge button */
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  min-width: 120px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.category-buttons button:hover,
+.interest-buttons button:hover,
+.language-buttons button:hover,
+.skill-buttons button:hover,
+.stay-healthy-buttons button:hover,
+.learn-about-buttons button:hover,
+.browse-category-buttons button:hover,
+.keep-in-touch-buttons button:hover {
+  background-color:  #9b59ac;;
+  color: white;
+}
+
+.category-buttons button:focus,
+.interest-buttons button:focus,
+.language-buttons button:focus,
+.skill-buttons button:focus,
+.stay-healthy-buttons button:focus,
+.learn-about-buttons button:focus,
+.browse-category-buttons button:focus,
+.keep-in-touch-buttons button:focus {
+  outline: none;
+}
+
+/* Browse by Category Section */
+.browse-category-section {
+  margin-top: 30px;
+  text-align: center; /* Center-align the heading */
+}
+
+.browse-category-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Keep in Touch with Your Interests Section */
+.keep-in-touch-section {
+  margin-top: 30px;
+  text-align: center; /* Center-align the heading */
+}
+
+.keep-in-touch-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Stay Healthy Section */
+.stay-healthy-section {
+  margin-top: 30px;
+}
+
+.stay-healthy-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Learn About Anything Section */
+.learn-about-section {
+  margin-top: 30px;
+}
+
+.learn-about-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Main Content */
+.podcast-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Available Podcasts */
+.card {
+  margin-bottom: 15px;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 1.2rem;
+}
+
+.card button {
+  border-radius: 25px;
+  font-size: 14px;
+}
+
+.card button:first-of-type {
+  margin-right: 10px;
+}
+
+.card button:hover {
+  background-color: #9800ca;
+}
+
+/* Playlist Section */
+.list-group-item {
+  cursor: pointer;
+}
+
+.list-group-item.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.list-group-item .btn {
+  border-radius: 25px;
+  font-size: 14px;
+}
+
+/* React Player */
+.react-player {
+  margin-top: 20px;
+}
+
+/* Modal Styling */
+.modal-body input {
+  border-radius: 25px;
+  padding: 10px;
+  width: 100%;
+}
+
+.modal-footer button {
+  border-radius: 25px;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #222324; /* Light grey color */
+  padding: 40px 0;
+}
+
+.footer .underline {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.footer a {
+  color: #ffffff;  /* White color for links */
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #ffffff;  /* White color for footer text */
+}
+
+.footer .row {
+  margin-bottom: 20px;
+}
+
+.footer .col {
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header .search-bar-col {
+    margin-top: 10px;
+  }
+
+  .category-buttons,
+  .interest-buttons,
+  .language-buttons,
+  .skill-buttons,
+  .stay-healthy-buttons,
+  .learn-about-buttons,
+  .browse-category-buttons,
+  .keep-in-touch-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category-buttons button,
+  .interest-buttons button,
+  .language-buttons button,
+  .skill-buttons button,
+  .stay-healthy-buttons button,
+  .learn-about-buttons button,
+  .browse-category-buttons button,
+  .keep-in-touch-buttons button {
+    margin-bottom: 10px;
+  }
+
+  .login-signup {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 15px;
+  }
+
+  .podcast-title h2 {
+    font-size: 1.5rem;
+  }
+
+  .search-bar {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .footer .col {
+    text-align: center;
+  }
+}
