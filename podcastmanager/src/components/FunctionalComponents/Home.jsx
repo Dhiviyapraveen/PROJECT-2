@@ -223,7 +223,7 @@ const Home = () => {
   </div>
 </div>
 
-{/* New Language Section */}
+
 <div className="language-section center-align">
         <h3>Learn or Practice a New Language</h3>
         <div className="language-buttons">
@@ -319,7 +319,7 @@ const Home = () => {
       </div>
 
 
-      {/* Playlist Modal */}
+  
       <Modal show={showModal} onHide={() => setShowModal(false)} centered>
         <Modal.Header closeButton>
           <Modal.Title>My Playlists</Modal.Title>
@@ -353,7 +353,7 @@ const Home = () => {
       </Modal>
       
 
-      {/* Podcasts Display */}
+   
       <Row>
         {filteredPodcasts.map((podcast) => (
           <Col md={4} key={podcast.id}>
@@ -375,12 +375,11 @@ const Home = () => {
         ))}
       </Row>
 
-      {/* Playing Podcast */}
       {selectedPodcast && (
         <ReactPlayer url={selectedPodcast.url} playing controls />
       )}
 
-      {/* Footer */}
+ 
       <footer className="footer">
         <Container>
           <Row>
